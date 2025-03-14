@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+      <!-- Smythe font -->
+      <link rel="stylesheet" href="index.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+      <!-- Arimo (verdana alternative) font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <div class="header-text-container">
+          <h1>Ava's Diner</h1>
+          <p>The best burgers and pizzas in town.</p>
+        </div>
+      </header>
+      <main>
+        <div class="main-container">
+          <div class="menu-container" id="menu-container"></div>
+          <div class="your-order-title-container" id="your-order-title-container"></div>
+          <div class="order-container" id="order-container"></div>
+          <div class="total-price-border-outer" id="total-price-border-outer"></div>
+          <div class="total-price-container" id="total-price-container"></div>
+          <div class="complete-order-btn-container" id="complete-order-btn-container"></div>
+          <div class="modal hidden" id="modal">
+            <div class="modal-inner" id="modal-inner">
+                <h3>Enter Card Details</h3>
+              <form id="payment-form">
+                <input type="text" placeholder="Enter your name" id="full-name" required> 
+                <input type="text" placeholder="Enter card number" required> 
+                <input type="text" placeholder="Enter CVV" required> 
+                <button type="submit" class="green-btn" data-pay="pay-btn">Pay</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
