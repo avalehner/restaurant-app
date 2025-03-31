@@ -107,7 +107,6 @@ function handleRemoveBtnClick (itemId) {
   const removedItemPriceNumber = Number(removedItemPrice.replace("$", ""))
   const removedItemPriceNumberIndex = orderPrices.indexOf(removedItemPriceNumber)
   orderPrices.splice(removedItemPriceNumberIndex,1)
-  console.log(orderPrices)
 
   if (orderPrices.length === 0){
     totalPrice = 0 
